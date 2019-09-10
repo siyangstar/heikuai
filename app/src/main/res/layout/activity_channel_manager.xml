@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_channel_manager_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true"
+        titlebar:titleText="@string/channel_manage" />
+
+    <!-- 我关注的频道文字标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_channel"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_largex" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="单击增删频道，长按拖拽排序"
+            android:textColor="@color/text4"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <!-- 我关注的频道gridview列表 -->
+
+    <com.cqsynet.swifi.view.DragGridView
+        android:id="@+id/gvMine_channel_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" 
+        android:horizontalSpacing="2dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <!-- 点击添加标题栏 -->
+
+    <TextView
+        android:id="@+id/tvAddMore_channel_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp"
+        android:text="@string/add_more"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_largex" />
+
+    <!-- 待添加gridview列表 -->
+
+    <GridView
+        android:id="@+id/gvOther_channel_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

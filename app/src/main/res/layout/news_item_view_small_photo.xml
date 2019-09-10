@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_item_bg_selector"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivNewsThumbnail_small_photo"
+            android:layout_width="117dp"
+            android:layout_height="78dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvNewsTitle_small_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/ivNewsThumbnail_small_photo"
+            android:maxLines="2"
+            android:lineSpacingExtra="6dp"
+            android:text="这是标题"
+            android:textColor="@color/text1"
+            android:textSize="@dimen/text_size_large" />
+
+        <include
+            android:id="@+id/llNewsInfo_small_photo"
+            layout="@layout/news_item_news_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tvNewsTitle_small_photo"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/ivNewsThumbnail_small_photo" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/llActivity_small_photo"
+        layout="@layout/news_item_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+</LinearLayout>

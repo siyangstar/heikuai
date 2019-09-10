@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">嘿快</string>
+    <string name="app_name_en">HeiKuai</string>
+    <string name="error_rsa">您的账号已在其它地方使用,请重新登录</string>
+    <string name="remind">温馨提示</string>
+    <string name="weixin_focus_reminder">想要关注公众号：%s，点击下方按钮复制公众号名称并跳转到微信。在微信搜索框内，粘贴已复制的微信号名称，搜一搜即可关注该公众号。</string>
+    <string name="open_weixin">复制并打开微信</string>
+    <string name="no_weixin">请先安装微信后关注</string>
+    <string name="menuitem_news">精彩资讯</string>
+    <string name="login">登               录</string>
+    <string name="input_psw">请输入密码</string>
+    <string name="input_name">请输入昵称</string>
+    <string name="input_phonenum">请输入手机号</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="input_new_psw">请输入6~18位新密码</string>
+    <string name="input_old_psw">请输入旧密码</string>
+    <string name="forget_psw">忘记密码</string>
+    <string name="forget_psw_title">找回密码</string>
+    <string name="ok">确              认</string>
+    <string name="regist">注               册</string>
+    <string name="regist2">注册账号</string>
+    <string name="regist_complete">完成注册</string>
+    <string name="regist_input_invite_code">请输入邀请码</string>
+    <string name="sreturn">返回</string>
+    <string name="free_wifi">附近的WiFi</string>
+    <string name="surplus_time">本次剩余时长</string>
+    <string name="today_used_time">今日累计使用</string>
+    <string name="minute">分钟</string>
+    <string name="renew_after_some_minutes" formatted="false">您可以在%s分钟后续时</string>
+    <string name="no_free_wifi">点击开启免费上网</string>
+    <string name="casttotime_remind" formatted="false">您的免费上网时长还剩下%d分钟，为了避免网络突然中断造成不便，请您立即续时。</string>
+    <string name="my_channel">我的频道</string>
+    <string name="add_more">更多频道</string>
+    <string name="channel_manage">频道管理</string>
+    <string name="shake">摇一摇可以截屏反馈哟</string>
+    <string name="send">发送</string>
+    <string name="topic">专题</string>
+    <string name="recommend_gallery">图集推荐</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="edit">编辑</string>
+    <string name="collect_remind">不要忘记那些重要的事！收藏他们吧！</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="remove_collect_success">您已取消收藏</string>
+    <string name="get_verify_code"> 获取验证码 </string>
+    <string name="get_verify_count_down">重新获取(%1$d)</string>
+    <string name="regist_notice">注册即表示同意</string>
+    <string name="user_agreement">《嘿快用户协议》</string>
+    <string name="verify_code_error">没收到验证码？</string>
+    <string name="empty_phone_warning">手机号不能为空</string>
+    <string name="psw_warning">密码需6-18位，由英文字母a-z（区分大小写）、数字0-9、特殊字符组成</string>
+    <string name="agreement_error">您未同意《用户注册协议》</string>
+    <string name="verify_code_warning">请输入正确的验证码</string>
+    <string name="phone_format_warning">手机号格式错误</string>
+    <string name="request_fail_warning">请检查网络后重试</string>
+    <string name="system_maintenance">系统维护中</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="regist_success">恭喜，注册成功！</string>
+    <string name="login_fail">登录失败</string>
+    <string name="get_verify_code_fail">获取验证码失败</string>
+    <string name="change_psw_success">重置密码成功</string>
+    <string name="change_psw_fail">重置密码失败</string>
+    <string name="get_channel_list_fail">获取频道列表失败</string>
+    <string name="get_user_info_fail">获取用户信息失败</string>
+    <string name="update_user_info_fail">修改用户信息失败</string>
+    <string name="update_user_info_ok">修改用户信息成功</string>
+    <string name="update_phone_fail">修改手机号码失败</string>
+    <string name="update_phone_ok">修改手机号码成功</string>
+    <string name="update_pwd_fail">修改密码失败</string>
+    <string name="update_pwd_ok">修改密码成功</string>
+    <string name="report">反馈问题</string>
+    <string name="submit_suggest_success">问题反馈成功</string>
+    <string name="submit_suggest_fail">问题反馈失败</string>
+    <string name="set_channel_list_fail">频道列表上传失败</string>
+    <string name="no_more_item">亲~您已看完全部内容</string>
+    <string name="get_lottery_fail">获取抽奖列表失败</string>
+    <string name="people_info">个人中心</string>
+    <string name="my_lottery">我的中奖</string>
+    <string name="my_account">我的账户</string>
+    <string name="my_message">消息</string>
+    <string name="message_center">消息中心</string>
+    <string name="market">嘿快商城</string>
+    <string name="app">应用</string>
+    <string name="bottle">漂流瓶</string>
+    <string name="save_photo_success">图片保存成功</string>
+    <string name="access_storage_failed">访问内存权限被拒绝</string>
+    <string name="no_lottery_available">暂无可用中奖信息</string>
+    <string name="no_lottery_invalid">暂无失效中奖信息</string>
+    <string name="msg_invalid">消息已过期</string>
+    <string name="wifi_help">上网帮助</string>
+    <string name="bulletin">运营公告</string>
+    <string name="wifi_tip_content_1">轨道免费WiFi覆盖范围内连接嘿快上网专用热点</string>
+    <string name="wifi_tip_content_2">返回APP，点击按钮获得三小时免费上网</string>
+    <string name="wifi_tip_content_3">打开通知，确保收到上网续时的提醒</string>
+    <string name="wifi_tip_ignore">下次不再提醒 直接去连接</string>
+    <string name="wifi_tip_not_connect">你目前处于无网状态，为保障你的阅读体验，请开启上网后继续访问</string>
+    <string name="wifi_disconnect">你的免费WiFi已断开\n请重新连接</string>
+    <string name="wifi_free_finish">你的免费上网时长已结束\n请重新开启上网</string>
+
+    <string name="data_loading">努力加载数据中&#8230;</string>
+    <string name="webactivity_wifi_tip1">亲，您还未开启轨道WiFi</string>
+    <string name="webactivity_wifi_tip2">一键开启免费上网</string>
+    <string name="webactivity_wifi_tip3">轨道WiFi连接中，请稍候</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="sign">个性签名</string>
+    <string name="user_info">个人信息</string>
+    <string name="fill_sex">请选择你的性别</string>
+    <string name="fill_age">请选择你的年龄</string>
+    <string name="fill_sign">请输入你的个性签名</string>
+    <string name="bottle_text_limit">请至少输入5个字</string>
+    <string name="no_bottle">丢一个瓶子试试吧</string>
+    <string name="voice_hint1">松开手指，取消发送</string>
+    <string name="voice_hint2">手指上滑，取消发送</string>
+    <string name="voice_hint3">按住 说话</string>
+    <string name="voice_hint4">松开 结束</string>
+    <string name="voice_hint5">松开扔出去</string>
+    <string name="complain">投诉</string>
+    <string name="voice_too_short">语音太短啦</string>
+
+    <!--comment-->
+    <string name="comment_list">评论列表</string>
+    <string name="comment_submitting">提交中&#8230;</string>
+    <string name="comment_success">评论成功</string>
+    <string name="comment_fail">评论失败</string>
+    <string name="report_success">举报成功</string>
+    <string name="like_fail">点赞失败</string>
+    <string name="like_repeat">已点赞</string>
+    <string name="hot_comment">热门评论</string>
+    <string name="new_comment">最新评论</string>
+    <string name="no_comment">暂无评论，速抢沙发</string>
+    <string name="comment_hint">在这里说点什么吧</string>
+    <string name="comment_public">发布</string>
+    <string name="my_comment">我的评论</string>
+    <string name="comment_replay">回复我的</string>
+    <string name="comment">评论</string>
+    <string name="comment_list_failed">获取评论列表失败</string>
+    <string name="no_comment_reply">还没有人回复你</string>
+    <string name="no_my_comment">你还没有评论</string>
+
+    <!--scanner-->
+    <string name="scan_hint">将识别主体放入框内</string>
+    <string name="use_cheat">使用秘籍</string>
+    <string name="scan_lottery">我的奖品</string>
+    <string name="scan_fail_hint">扫描的物品或LOGO不正确</string>
+    <string name="scan_continue">继续扫一扫</string>
+    <string name="check_lottery">查看我的奖品</string>
+
+    <!--settings-->
+    <string name="setting">系统设置</string>
+    <string name="modify_phone">登录手机号修改</string>
+    <string name="modify_password">密码修改</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_heikuai">关于嘿快"</string>
+    <string name="hot_line">招商热线</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="check_update">检查更新</string>
+    <string name="logout">退出登录</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="weibo_weixin">微博微信</string>
+    <string name="home_page">企业主页</string>
+
+    <!-- 分享相关 -->
+    <string name="qzone">QQ空间</string>
+    <string name="cicle_friend">微信朋友圈</string>
+    <string name="weixin">微信好友</string>
+    <string name="qq_friend">QQ好友 </string>
+    <string name="sina_weibo">新浪微博</string>
+
+    <!--社交-->
+    <string name="meet">偶遇</string>
+    <string name="chat">聊天</string>
+    <string name="friend">好友</string>
+    <string name="find_someone">找人</string>
+    <string name="social_modify">修改资料</string>
+    <string name="social_in_train">你好像还在列车上</string>
+    <string name="social_out_train">你好像还没有登上列车</string>
+    <string name="social_no_wifi">连接嘿快轨道WiFi才能使用本功能\n试试查看附近的人或丢个漂流瓶吧</string>
+    <string name="social_no_location_1">无法获取你的位置信息</string>
+    <string name="social_no_location_2">请确认网络正常连接再后重新进入本功能</string>
+    <string name="social_change_posture">可能TA们比较害羞，换个姿势找找看</string>
+    <string name="social_no_person">没有找到符合标准的人哟</string>
+    <string name="social_refresh">点击空白处刷新试试</string>
+    <string name="social_filter_hint">修改一下你的筛选标准吧</string>
+    <string name="social_delete_bottle">从消息列表中删除漂流瓶，不会删除漂流瓶的聊天记录</string>
+    <string name="social_delete_friends_apply">从消息列表中删除好友申请，不会删除好友申请记录</string>
+    <string name="social_delete_chat_msg">删除后，将清空聊天的消息记录</string>
+    <string name="social_search_friends">抱歉! 未能找到相关内容</string>
+    <string name="social_same_train">同列车的人</string>
+    <string name="social_same_station">同站台的人</string>
+    <string name="social_same_line">同线路的人</string>
+    <string name="social_nearby">附近的人</string>
+    <string name="social_friend_apply_greetings">嘿，可以交个朋友吗?</string>
+    <string name="social_friend_apply_sent">已成功发送好友申请</string>
+    <string name="social_friend_apply_failed">发送好友申请失败</string>
+    <string name="social_define_delete_friends_apply">确定删除好友请求吗？</string>
+    <string name="social_add_friend_failed">添加好友失败</string>
+    <string name="social_delete_friend_failed">删除好友失败</string>
+    <string name="social_modify_remark_failed">修改备注失败</string>
+    <string name="social_find_person_failed_tip">本功能基于轨道WiFi发射器进行定位，站台与车厢分属不同的网络区间，上下车时需要进行切换。例：比如你在车厢内但看不到同列车的人，说明你的WiFi来源还没有自动切换至车厢，请你等列车开动了再刷新看看。</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

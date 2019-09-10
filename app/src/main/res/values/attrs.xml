@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏 -->
+    <declare-styleable name="TitleBar">
+        <!-- 标题文字 -->
+        <attr name="titleText" format="string"/>
+        <!-- 标题栏左侧图标 -->
+        <attr name="leftIcon" format="reference"/>
+        <!-- 标题栏右侧图标 -->
+        <attr name="rightIcon" format="reference"/>
+        <!-- 标题是否显示 -->
+        <attr name="showTitleText" format="boolean"/>
+        <!-- 标题栏左侧图标是否显示 -->
+        <attr name="showLeftIcon" format="boolean"/>
+        <!-- 标题栏右侧图标是否显示 -->
+        <attr name="showRightIcon" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 登陆用户名密码输入框 -->
+    <declare-styleable name="LoginInputField">
+        <!-- 输入类型为密码输入 -->
+        <attr name="inputTypePsw" format="boolean"/>
+        <attr name="inputType" format="string"/><!--  -->
+        <attr name="inputLength" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SlidingPagerTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="NoDataRemind">
+        <attr name="remind_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SideIndexBar">
+        <attr name="letterSize" format="dimension"/>
+        <attr name="letterColor" format="color"/>
+        <attr name="selectLetterColor" format="color"/>
+        <attr name="selectBackground" format="reference|color"/>
+        <attr name="isBoldface" format="boolean"/>
+        <attr name="isLetterCenter" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/translucence" />
+            <corners android:radius="50dp" />
+            <padding
+                android:left="10dp"
+                android:right="10dp" />
+        </shape>
+    </item>
+
+    <item>
+        <bitmap android:src="@drawable/ic_location"
+            android:gravity="center"/>
+    </item>
+
+</layer-list>

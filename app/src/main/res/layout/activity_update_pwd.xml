@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    xmlns:inputfield="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_activity_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录手机号："
+            android:textSize="@dimen/text_size_large" 
+            android:textColor="@color/text2" />
+
+        <TextView
+            android:id="@+id/tvPhoneNum_activity_update_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <com.cqsynet.swifi.view.LoginInputField
+                android:id="@+id/etOldPsw_activity_update_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                inputfield:inputLength="18"
+                inputfield:inputType="3"
+                inputfield:inputTypePsw="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <com.cqsynet.swifi.view.LoginInputField
+                android:id="@+id/etNewPwd_activity_update_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                inputfield:inputType="2"
+                inputfield:inputTypePsw="true" 
+                inputfield:inputLength="18"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate_activity_update_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_green_bg_selector"
+            android:onClick="update"
+            android:singleLine="true"
+            android:text="修    改"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</LinearLayout>

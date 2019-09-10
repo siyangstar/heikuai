@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white">
+
+		<ImageView
+			android:id="@+id/iv_back"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:contentDescription="@null"
+			android:scaleType="center"
+			android:src="@drawable/btn_back_green_selector" />
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="@color/text1"
+			android:textSize="@dimen/text_size_largexx" />
+
+		<TextView
+			android:id="@+id/tv_save"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:layout_gravity="end"
+			android:gravity="center"
+			android:text="保存"
+			android:textColor="@color/green"
+			android:textSize="16sp" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_gravity="bottom"
+			android:background="@color/line" />
+	</FrameLayout>
+
+    <TextView
+        android:id="@+id/tvProvince_activity_edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large"
+        android:hint="请选择省份" 
+        android:background="@drawable/news_item_bg_selector"/>
+        
+        <!-- 城市 -->
+        
+	<View
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line" />
+	
+    <TextView
+        android:id="@+id/tvCity_activity_edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large"
+        android:hint="请选择城市" 
+        android:background="@drawable/news_item_bg_selector"/>
+    
+        <!-- 区县 -->
+        
+	<View
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line" />
+	
+    <TextView
+        android:id="@+id/tvCounty_activity_edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large"
+        android:hint="请选择区县" 
+        android:background="@drawable/news_item_bg_selector"/>
+    
+	<View
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text4"
+        android:textSize="@dimen/text_size_medium"
+        android:text="请从上往下依次选择" />
+
+</LinearLayout>

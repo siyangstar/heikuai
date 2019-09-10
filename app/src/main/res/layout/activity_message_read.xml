@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey" >
+    
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/back_titlebar_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+    
+    <TextView
+        android:id="@+id/read_title"
+     	android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:layout_gravity="center"
+     	android:layout_marginLeft="18dp"
+     	android:layout_marginRight="18dp"
+     	android:layout_marginTop="20dp"
+     	android:textSize="@dimen/text_size_largex"
+     	android:textColor="@color/text2"/>
+    
+    <TextView
+        android:id="@+id/message_detail_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/text4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView
+        android:id="@+id/read_content"
+     	android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:layout_gravity="center"
+     	android:layout_marginLeft="18dp"
+     	android:layout_marginRight="18dp"
+     	android:layout_marginTop="20dp"
+     	android:textSize="@dimen/text_size_medium"
+     	android:textColor="@color/text3"
+     	/>
+</LinearLayout>

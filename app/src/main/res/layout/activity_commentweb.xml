@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitlebar_commentweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_grey" >
+
+        <ImageButton
+            android:id="@+id/btnBack_commentweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_green_selector" />
+
+        <ImageButton
+            android:id="@+id/btnClose_commentweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnBack_commentweb"
+            android:background="@drawable/btn_close_green_selector"/>
+
+        <ProgressBar
+            android:id="@+id/progress_commentweb"
+            style="@style/progress_circle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/btnClose_commentweb"
+            android:indeterminateDuration="700"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_commentweb"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rlTitlebar_commentweb"
+        android:background="@color/line" />
+
+    <WebView
+        android:id="@+id/wv_commentweb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_commentweb"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

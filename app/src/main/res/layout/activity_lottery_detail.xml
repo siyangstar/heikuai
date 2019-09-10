@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/activity_lottery_detail_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_grey"/>
+    
+    <TextView
+        android:id="@+id/lottery_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:background="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/text2"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textSize="@dimen/text_size_medium"
+	        android:textColor="@color/text3"
+	        android:padding="10dp"
+	        android:text="中奖奖项 :"/>
+	    
+	    <TextView
+	        android:id="@+id/lottery_prize_class"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textSize="@dimen/text_size_medium"
+	        android:textColor="@color/red"
+	        android:padding="10dp"/>
+	</LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_medium"
+	        android:textColor="@color/text3"
+	        android:padding="10dp"
+	        android:text="奖        品 :"/>
+	    
+	    <TextView
+	        android:id="@+id/lottery_prize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_medium"
+	        android:textColor="@color/text2"
+	        android:padding="10dp"/>
+	</LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_medium"
+	        android:textColor="@color/text3"
+	        android:padding="10dp"
+	        android:text="领奖须知"/>
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_marginLeft="12dp"
+	        android:layout_height="1px"
+	        android:background="@color/line"/>
+	    <ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true">
+			<TextView
+				android:id="@+id/lottery_rule"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="5dp"
+				android:lineSpacingMultiplier="1.5"
+				android:textSize="@dimen/text_size_medium"
+				android:textColor="@color/text2"
+				android:padding="10dp"/>
+		</ScrollView>
+	</LinearLayout>
+	
+    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/line"/>
+
+</LinearLayout>

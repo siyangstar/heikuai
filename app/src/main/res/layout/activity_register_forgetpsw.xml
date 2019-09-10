@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey"
+        android:orientation="vertical">
+
+        <com.cqsynet.swifi.view.TitleBar
+            android:id="@+id/titleBar_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:showLeftIcon="true"
+            app:titleText="@string/regist" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!-- 手机号输入框 -->
+
+                    <com.cqsynet.swifi.view.LoginInputField
+                        android:id="@+id/inputFieldPhoneNum_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:inputLength="11"
+                        app:inputType="0"
+                        app:inputTypePsw="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!-- 验证码输入框 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.cqsynet.swifi.view.LoginInputField
+                            android:id="@+id/inputFieldVerifyCode_register"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:inputLength="6"
+                            app:inputType="1"
+                            app:inputTypePsw="false" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/line" />
+
+                        <Button
+                            android:id="@+id/getVerifyCode_rigister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_verify_code"
+                            android:lines="1"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="@string/get_verify_code"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_large" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!-- 密码输入框 -->
+
+                    <com.cqsynet.swifi.view.LoginInputField
+                        android:id="@+id/inputFieldPsw_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:inputLength="18"
+                        app:inputType="2"
+                        app:inputTypePsw="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <!-- 登陆按钮 -->
+
+                <Button
+                    android:id="@+id/btnRegist_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_green_bg_selector"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/llUserAgreement_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_activity_register"
+                        style="@style/CheckBoxTheme2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regist_notice"
+                        android:textColor="@color/text4"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tvSer_activity_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_agreement"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_VerifyCode_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="@string/verify_code_error"
+        android:textColor="@color/green" />
+</FrameLayout>

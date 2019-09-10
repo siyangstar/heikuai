@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 职业 -->
+    <string-array name="profession">
+        <item>计算机/互联网/通信</item>
+        <item>生产/工艺/制造</item>
+        <item>医疗/护理/制药</item>
+        <item>金融/银行/投资/保险</item>
+        <item>商业/服务/个体经营</item>
+        <item>文化广告/传媒</item>
+        <item>娱乐/艺术/表演</item>
+        <item>法律/法务</item>
+        <item>教育/培训</item>
+        <item>公务员/行政/事业单位</item>
+        <item>模特</item>
+        <item>空姐</item>
+        <item>学生</item>
+        <item>其它</item>
+    </string-array>
+    
+    <!-- 人生阶段 -->
+    <string-array name="step">
+        <item>单身</item>
+        <item>恋爱</item>
+        <item>筹备结婚</item>
+        <item>小两口</item>
+        <item>准爸妈</item>
+        <item>为人父母</item>
+    </string-array>
+
+    <!-- 性别 -->
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <!-- 年龄段 -->
+    <string-array name="age">
+        <item>18岁以下</item>
+        <item>18-25岁</item>
+        <item>26-32岁</item>
+        <item>33-40岁</item>
+        <item>40岁以上</item>
+    </string-array>
+
+    <!--找人类型-->
+    <string-array name="find_category">
+        <item>同列车的人</item>
+        <item>同站台的人</item>
+        <item>同线路的人</item>
+        <item>附近的人</item>
+    </string-array>
+
+    <!-- 聊天长按弹出菜单项(未发送成功) -->
+    <string-array name="chat_popup_1">
+        <item>重发</item>
+        <item>删除</item>
+        <item>复制</item>
+    </string-array>
+    <!-- 聊天长按弹出菜单项(已发送成功) -->
+    <string-array name="chat_popup_2">
+        <item>删除</item>
+        <item>复制</item>
+    </string-array>
+    <string-array name="chat_popup_3">
+        <item>删除</item>
+    </string-array>
+    <string-array name="chat_popup_4">
+        <item>重发</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="comment_action_1">
+        <item>回复</item>
+        <item>复制</item>
+        <item>举报</item>
+    </string-array>
+    <string-array name="comment_action_2">
+        <item>复制</item>
+        <item>举报</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>重庆</item>
+        <item>济南</item>
+    </string-array>
+
+    <string-array name="city_code">
+        <item>132</item>
+        <item>288</item>
+    </string-array>
+</resources>

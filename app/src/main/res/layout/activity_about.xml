@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_activity_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true" />
+
+    <ImageView
+        android:id="@+id/ivLogo_activity_about"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_largex" />
+
+    <TextView
+        android:id="@+id/tvVersion_activity_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="1.0.0"
+        android:textColor="@color/text4"
+        android:textSize="@dimen/text_size_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="40dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_selecter"
+        android:gravity="center_vertical"
+        android:onClick="functionIntroduce"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            style="@style/setting_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能介绍"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/my_account"
+            android:scaleType="fitXY"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_selecter"
+        android:gravity="center_vertical"
+        android:onClick="weibo"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            style="@style/setting_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博微信"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/my_account"
+            android:scaleType="fitXY"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_selecter"
+        android:gravity="center_vertical"
+        android:onClick="enterPage"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            style="@style/setting_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="企业主页"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/my_account"
+            android:scaleType="fitXY"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="protocol"
+        android:padding="10dp"
+        android:text="产品服务条款"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="Copyright © 2015-2017\n重庆尚渝网络科技有限公司"
+        android:textColor="@color/text4"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+
+    <TextView
+        android:id="@+id/hot_news_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:layout_marginRight="2dp"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large"
+        android:text="福特福克斯"
+        android:background="@drawable/news_item_bg_selector"/>
+    
+</LinearLayout>

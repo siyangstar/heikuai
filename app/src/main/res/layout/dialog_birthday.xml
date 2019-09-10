@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text1"
+                android:text="生日修改"
+	            android:textSize="@dimen/text_size_largexx"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/dlog_close"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/dlog_close" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+			android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Spinner
+                android:id="@+id/year"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/spinner_bg1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text_size_small"
+                android:text="年" />
+
+            <Spinner
+                android:id="@+id/month"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/spinner_bg2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text_size_small"
+                android:text="月" />
+
+            <Spinner
+                android:id="@+id/day"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/spinner_bg2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text_size_small"
+                android:text="日" />
+
+        </LinearLayout>
+<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+			android:layout_weight="1" />
+        <Button
+            android:id="@+id/name_ok"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/text_size_medium" 
+	        android:background="@drawable/btn_green_bg_selector"
+	        android:text="确  定"
+	        android:textColor="@color/white" />
+
+    </LinearLayout>
+    
+</LinearLayout>

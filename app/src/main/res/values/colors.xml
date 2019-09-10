@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="line">#DDDDDD</color>
+    <!--<color name="green">#39B44A</color>-->
+    <color name="green">#5bb75b</color>
+    <color name="trans_green">#8039B44A</color>
+    <color name="light_green">#AFE3B3</color>
+    <color name="social_green">#35B87F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="trans_white">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_orange">#FFEFBE</color>
+    <color name="orange">#F08300</color>
+    <color name="brown">#B59461</color>
+    <color name="bg_grey">#F8F8F8</color>
+    <color name="bg_grey_light">#FBFBFB</color>
+    <color name="bg_grey_dark">#EEEEEE</color>
+    <color name="blue">#01AFEC</color>
+    <color name="red">#D6000A</color>
+    <color name="translucence">#40000000</color>
+    <color name="translucence2">#DD000000</color>
+    <color name="translucence3">#88000000</color>
+    <color name="dark_brown">#966F36</color>
+    <color name="text1">#363636</color>
+    <color name="text2">#666666</color>
+    <color name="text3">#999999</color>
+    <color name="text4">#CBCBCB</color>
+    <color name="text5">#3F3F3F</color>
+
+
+
+    <color name="blue1">#0088CC</color>
+    <color name="blue2">#49afcd</color>
+    <color name="orange1">#FAA732</color>
+    <color name="red1">#da4f49</color>
+    <color name="green1">#5bb75b</color>
+    <color name="green2">#7FA87F</color>
+    <color name="grey_bg">#FBFBFB</color>
+    <color name="grey_quote">#DEDEDE</color>
+    <color name="grey_text">#7A7A7A</color>
+    <color name="black_text">#363636</color>
+    <color name="milk_white">#FCFAF2</color>
+    <color name="yellow">#DFCE34</color>
+</resources>

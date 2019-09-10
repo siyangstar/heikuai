@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/flLandscape_webactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlPotrait_webactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlTitlebar_webactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageButton
+                android:id="@+id/btnBack_webactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_green_selector" />
+
+            <ImageButton
+                android:id="@+id/btnShare_webactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:src="@drawable/btn_share_green_selector" />
+
+            <ImageButton
+                android:id="@+id/btnCollect_webactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@id/btnShare_webactivity"
+                android:background="@drawable/btn_collect_green_off" />
+
+            <ImageButton
+                android:id="@+id/btnClose_webactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnBack_webactivity"
+                android:background="@drawable/btn_close_green_selector"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_webactivity"
+                style="@style/progress_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/btnClose_webactivity"
+                android:indeterminateDuration="700"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_webactivity"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/rlTitlebar_webactivity"
+            android:background="@color/line" />
+
+        <View
+            android:id="@+id/title_mark_view"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@color/translucence"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line_webactivity"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <WebView
+                    android:id="@+id/wv_webactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+                <ImageView
+                    android:id="@+id/ivBlank_webactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/blank_page"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/mark_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/translucence"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:id="@+id/comment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_comment_radius"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:imeOptions="actionSend"
+                            android:lineSpacingExtra="3dp"
+                            android:maxLength="400"
+                            android:maxLines="5"
+                            android:minHeight="33dp"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/text1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_comment_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="32dp"
+                            android:text="@string/comment_hint"
+                            android:textColor="@color/text1" />
+
+                        <TextView
+                            android:id="@+id/tv_comment_disable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/text3"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_write"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_write_black" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_send_green"
+                            android:text="@string/comment_public"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/fl_comment_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:id="@+id/place_holder_view"
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/ic_comment_count_black" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_comment_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_marginLeft="14dp"
+                                android:background="@drawable/bg_green_text"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </FrameLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTip_webactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_webactivity"
+            android:background="#88000000"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivLight_webactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/light" />
+
+            <ImageButton
+                android:id="@+id/ibtnCloseTip_webactivity"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/btn_close_selector" />
+
+            <TextView
+                android:id="@+id/tvTip_webactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@id/ibtnCloseTip_webactivity"
+                android:layout_toRightOf="@id/ivLight_webactivity"
+                android:text="友情提醒:您当前未使用免费wifi网络"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvContent_suggest_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv1_list_item"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv2_list_item"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="6dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv3_list_item"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="6dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTime_suggest_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text4"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivIsRe_suggest_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+		android:layout_gravity="right|center_vertical"
+        android:background="@drawable/reply_false" />
+
+</FrameLayout>

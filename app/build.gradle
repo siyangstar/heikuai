@@ -1,0 +1,144 @@
+apply plugin: 'com.android.application'
+//shareSDK
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    defaultConfig {
+        applicationId "com.cqsynet.swifi"
+        minSdkVersion 19
+        targetSdkVersion 27
+//        multiDexEnabled = true    //设置后,低端手机可能会无法安装
+//        ndk {
+//            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+//            abiFilters 'armeabi'// 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            jni.srcDirs = []
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':pullToRefreshLibrary')
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //socketIO
+    implementation 'io.socket:engine.io-client:1.0.0'
+    //okhttp
+    //可以单独使用，不需要依赖下方的扩展包
+    implementation 'com.lzy.net:okgo:3.0.4'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.5.0'
+    //AndPermission
+    implementation 'com.yanzhenjie:permission:1.1.2'
+    // TinyPinyin
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+//    //BugTags
+//    implementation 'com.bugtags.library:bugtags-lib:2.3.1'
+    //小程序
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.4'
+}
+
+////应用 Bugtags 插件
+//apply plugin: 'com.bugtags.library.plugin'
+//
+////Bugtags 插件配置
+//bugtags {
+//    //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+//    appKey "d47ecd69081bbf35932270350b16f5cc"  //这里是你的 appKey
+//    appSecret "50c38441f7d6242b10bfccde921fdcfe"    //这里是你的 appSecret，管理员在设置页可以查看
+//    mappingUploadEnabled true
+//
+//    //网络跟踪功能配置(企业版)
+//    trackingNetworkEnabled true
+//}
+
+MobSDK {
+    appKey "7b3ba8e4e4ec"
+    appSecret "e79796e15d3b281741332d7954cb9e00"
+
+    ShareSDK {
+        version '3.2.0'
+        //平台配置信息
+        devInfo {
+            SinaWeibo {
+                id 1
+                sortId 1
+                appKey "2366643366"
+                appSecret "7db57bb94f10f72447edd0150a4e9f88"
+                callbackUri "http://dev.cqsynet.com/welcome/"
+                shareByAppClient true
+                enable true
+            }
+            QZone {
+                id 3
+                sortId 3
+                appId "1104590365"
+                appKey "23UeHnoNwh81Li25"
+                shareByAppClient true
+                enable true
+            }
+            Wechat {
+                id 4
+                sortId 4
+                appId "wxb1afacacdce2609e"
+                appSecret "af994a395132e8b35fc9629bc2f0ae5f"
+                bypassApproval false
+                enable true
+            }
+            WechatMoments {
+                id 5
+                sortId 5
+                appId "wxb1afacacdce2609e"
+                appSecret "af994a395132e8b35fc9629bc2f0ae5f"
+                bypassApproval false
+                enable true
+            }
+            QQ {
+                id 7
+                sortId 7
+                appId "1104590365"
+                appKey "23UeHnoNwh81Li25"
+                shareByAppClient true
+                enable true
+            }
+        }
+    }
+
+}

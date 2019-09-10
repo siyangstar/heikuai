@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_activity_selection_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/nearrest0"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/news_item_bg_selector"/>
+
+            <ImageView
+                android:id="@+id/nearrest1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/news_item_bg_selector"/>
+
+            <ImageView
+                android:id="@+id/nearrest2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/news_item_bg_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/nearrest3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/news_item_bg_selector"/>
+
+            <ImageView
+                android:id="@+id/nearrest4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/news_item_bg_selector"/>
+
+            <ImageView
+                android:id="@+id/nearrest5"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/news_item_bg_selector"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_album"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@color/line"
+        android:dividerHeight="1px"
+        android:layout_weight="1" 
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/from_camera"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout_selecter"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="拍摄照片"
+            android:textColor="@color/text4"
+            android:textSize="@dimen/text_size_largex" />
+    </LinearLayout>
+
+</LinearLayout>

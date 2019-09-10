@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@android:id/tabhost"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_grey_light"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_grey_light">
+
+
+        <TextView
+            android:id="@+id/tvCity_fragment_news_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_mediumx"
+            android:textColor="@color/text1"
+            android:drawableRight="@drawable/arrow_down"
+            android:drawablePadding="4dp"
+            tools:text="重庆" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/bg_grey_light">
+
+            <com.cqsynet.swifi.view.SlidingPagerTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_grey_light" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient_left" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/bg_gradient_right" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ibtnSearch_news"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/bg_grey_light"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/btn_search_green_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+</LinearLayout>

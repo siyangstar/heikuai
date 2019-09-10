@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/light_orange">
+    
+    <TextView 
+        android:id="@+id/tv1_wifi_use_history_listitem_layout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/dark_brown"
+        android:gravity="center"
+        android:text="日期"/>
+    
+    <TextView 
+        android:id="@+id/tv2_wifi_use_history_listitem_layout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/dark_brown"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="使用时长"/>
+    
+    <TextView 
+        android:id="@+id/tv4_wifi_use_history_listitem_layout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/dark_brown"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="节约流量"/>
+
+</LinearLayout>

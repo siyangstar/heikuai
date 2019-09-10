@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:orientation="horizontal"
+    android:background="@drawable/news_item_bg_selector">
+
+    <TextView
+        android:id="@+id/tvTitle_chat_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_mediumx"/>
+</LinearLayout>

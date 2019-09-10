@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#f0f0f0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/iv_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_btn_news_bg_selector" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_sns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_btn_sns_bg_selector" />
+
+            <ImageView
+                android:id="@+id/ivSnsMore_home"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/new_message_num_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_sns_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect_red"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_btn_more_bg_selector" />
+
+            <ImageView
+                android:id="@+id/iv_find_hint"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/new_message_num_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flContainer_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_tab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="@color/line" />
+
+    <ImageView
+        android:id="@+id/iv_wifi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_wifi_home_selector" />
+
+</RelativeLayout>

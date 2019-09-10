@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlBg_activity_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBgTop_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottle_bg_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivBgTop_activity_bottle"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottle_bg_bottom" />
+
+        <!-- 捞瓶子渔网层 -->
+        <FrameLayout
+            android:id="@+id/flFishingNet_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivFishingBottle_activity_bottle"
+                android:layout_width="54dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bottle"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivFishingNet_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fishingnet"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlWaterRipple_activity_bottle"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/ivBgTop_activity_bottle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-90dp"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivDropWater1_activity_bottle"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bottle_water_drop"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/ivRipple1_activity_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bottle_circle"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/ivDropWater2_activity_bottle"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bottle_water_drop"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/ivRipple2_activity_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bottle_circle"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/ivDropWater3_activity_bottle"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bottle_water_drop"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/ivRipple3_activity_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bottle_circle"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivFishingNetMark_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivBgTop_activity_bottle"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottle_bg_bottom"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivPickStart_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/fishingnet"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivPickEnd_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBgTop_activity_bottle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fishingnet"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rlPickBottle_activity_bottle"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/ivBgTop_activity_bottle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-90dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:id="@+id/ivPickRippleLeft_activity_bottle"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bottle_circle"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivPickRippleRight_activity_bottle"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bottle_circle"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivPickSprayLeft_activity_bottle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bottle_spray_left"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivPickSprayRight_activity_bottle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bottle_spray_right"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivFishingRippleLeft_activity_bottle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bottle_ripple_left"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivFishingRippleRight_activity_bottle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bottle_ripple_right"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivThrowStart_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/bottle"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivThrowEnd_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBgTop_activity_bottle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-90dp"
+            android:contentDescription="@null"
+            android:paddingRight="50dp"
+            android:src="@drawable/bottle"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTitlebar_activity_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <ImageButton
+            android:id="@+id/btnBack_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tvTitle_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bottle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_largexx" />
+
+        <ImageButton
+            android:id="@+id/btnSetting_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:src="@drawable/btn_setting" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivThrow_activity_bottle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/throw_bottle" />
+
+        <ImageView
+            android:id="@+id/ivPick_activity_bottle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pick_bottle" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivMyBottle_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/my_bottle" />
+
+            <TextView
+                android:id="@+id/tvRedPoint_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-16dp"
+                android:layout_toRightOf="@id/ivMyBottle_activity_bottle"
+                android:background="@drawable/round_rect_red"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 点击捞瓶子后的层 -->
+    <RelativeLayout
+        android:id="@+id/rlCoverLayer_activity_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <!-- 底部发送栏 -->
+        <LinearLayout
+            android:id="@+id/llBottom_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_grey"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+            <!-- 语音文字切换按钮 -->
+            <ImageButton
+                android:id="@+id/btnTypeSwitcher_activity_bottle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/btn_keyboard_selector" />
+
+            <!-- 发送按钮 -->
+            <TextView
+                android:id="@+id/tvSend_activity_bottle"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@drawable/btn_send_msg"
+                android:text="按住 说话"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <!-- 录入内容时的黑色背景 -->
+        <RelativeLayout
+            android:id="@+id/rlBlank_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/llBottom_activity_bottle"
+            android:background="@color/translucence2">
+
+            <ImageView
+                android:id="@+id/ivHint_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/bottle_hint" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llContent_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/llBottom_activity_bottle"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/round_rect_orange"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etContent_activity_bottle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left|top"
+                android:maxLength="1000"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tvCharCount_activity_bottle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:gravity="right"
+                android:text="0/1000"
+                android:textColor="@color/text3"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <!-- 录音麦克风 -->
+        <RelativeLayout
+            android:id="@+id/rlMic_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ivCircle1_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mic_circle"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivCircle2_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mic_circle"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivMic_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mic"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvCount_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text4"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tvHint_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivCircle1_activity_bottle"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text4"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 瓶子层,包括丢瓶子动画和捡到瓶子 -->
+    <RelativeLayout
+        android:id="@+id/rlBottleLayer_activity_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucence2"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivLight_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bottle_light" />
+
+        <ImageView
+            android:id="@+id/ivBottle_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="140dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bottle" />
+
+    </RelativeLayout>
+
+    <!-- 未捞到瓶子的海星层 -->
+    <RelativeLayout
+        android:id="@+id/rlNoBottleLayer_activity_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucence2"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottle_light" />
+
+        <ImageView
+            android:id="@+id/ivNoBottle_activity_bottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_bottle" />
+
+    </RelativeLayout>
+
+    <!-- 捡到瓶子后的回复层 -->
+    <RelativeLayout
+        android:id="@+id/rlResponse_activity_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucence2"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <!-- 用户信息 -->
+        <LinearLayout
+            android:id="@+id/llUserInfo_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp">
+
+            <!-- 头像 -->
+            <ImageView
+                android:id="@+id/ivHead_activity_bottle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_profile_default" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- 昵称 -->
+                <TextView
+                    android:id="@+id/tvName_activity_bottle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/man"
+                    android:drawablePadding="4dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!-- 签名 -->
+                <TextView
+                    android:id="@+id/tvSign_activity_bottle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lines="1"
+                    android:textColor="@color/text3"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+            <!-- 投诉 -->
+            <TextView
+                android:id="@+id/tvComplain_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投诉"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_large" />
+
+        </LinearLayout>
+
+        <!-- 瓶子内容 -->
+        <TextView
+            android:id="@+id/tvTextContent_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_below="@id/llUserInfo_activity_bottle"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/round_rect_orange"
+            android:gravity="left|top"
+            android:textColor="@color/text1"
+            android:textSize="@dimen/text_size_large"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlVoice_activity_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/chat_bg_left_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivVoice_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/voice_left" />
+
+            <TextView
+                android:id="@+id/tvTime_activity_bottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/text4"
+                android:textSize="@dimen/text_size_medium" />
+
+        </RelativeLayout>
+
+        <!-- 底部按钮(丢回水里,回应) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp">
+
+            <Button
+                android:id="@+id/btnThrowBack_activity_bottle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_white_selector"
+                android:padding="12dp"
+                android:text="丢回去"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text_size_large" />
+
+            <Button
+                android:id="@+id/btnResponse_activity_bottle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_white_selector"
+                android:padding="12dp"
+                android:text="回应"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

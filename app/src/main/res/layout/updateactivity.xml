@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvNoti_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large"
+        android:text="正在下载更新，请稍候..." />
+
+    <ProgressBar
+        android:id="@+id/pb_update"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_horizontal"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/tvNoti_update"
+        android:layout_marginTop="40dp"/>
+    
+    <TextView 
+        android:id="@+id/tvProgress_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/pb_update"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/text3"/>
+
+    <Button
+        android:id="@+id/btnReDownLoad_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProgress_update"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_green_bg_selector"
+        android:text="重新下载"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btnQuit_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReDownLoad_update"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_white_bg_selector"
+        android:text="取消"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large"
+        android:visibility="gone" />
+
+</RelativeLayout>

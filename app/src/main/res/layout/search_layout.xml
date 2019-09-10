@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:background="@color/bg_grey"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="5dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/search_edittext_shape"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/text2"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:inputType="text"
+                android:maxLength="40"
+                android:hint="请输入关键字" 
+                android:textColorHint="@color/text4"/>
+
+            <ImageView
+                android:id="@+id/search_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/login_delete_icon"
+                android:layout_gravity="right|center_vertical" />
+            
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/search_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/green"/>
+        
+    </LinearLayout>
+
+    <ProgressBar
+      	android:id="@+id/progress_line"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="match_parent"
+		android:layout_height="2dp"
+		android:progressDrawable="@drawable/progress_horizontal"
+        android:max="100"
+        android:progress="0"
+		android:visibility="gone"/>
+    
+    <LinearLayout
+        android:id="@+id/region_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"/>
+        
+	    <ListView
+	        android:id="@+id/lv_search_tips"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_del_search_all"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:padding="15dp"
+	        android:background="@color/bg_grey"
+	        android:textColor="@color/green"
+	        android:textSize="@dimen/text_size_large"
+	        android:text="清除历史记录"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/push_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/message_remind"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:src="@drawable/new_message_num_bg" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+    	android:layout_marginTop="10dp" 
+    	android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/bpush_list_time_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_medium"
+            	android:textColor="@color/text4"
+                android:text="2013-2-3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/text3"
+            android:textSize="@dimen/text_size_medium" 
+            android:text="内容的份上冯绍峰的爽肤水"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:inputfield="http://schemas.android.com/apk/res-auto"
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey"
+        android:orientation="vertical">
+
+        <com.cqsynet.swifi.view.TitleBar
+            android:id="@+id/titlebar_activity_update_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            titlebar:showLeftIcon="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="你当前的登录手机号为"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tvMsg_activity_update_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="186********"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_largex" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="修改登录手机后，下次登录需使用新手机号登录"
+                android:textColor="@color/text3"
+                android:textSize="@dimen/text_size_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.cqsynet.swifi.view.LoginInputField
+                    android:id="@+id/etPhone_activity_update_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    inputfield:inputLength="11"
+                    inputfield:inputType="0"
+                    inputfield:inputTypePsw="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.cqsynet.swifi.view.LoginInputField
+                    android:id="@+id/inputFieldVerifyCode_update_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:inputLength="6"
+                    app:inputType="1"
+                    app:inputTypePsw="false" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <Button
+                    android:id="@+id/btnGetVerify_activity_update_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_verify_code"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:text="@string/get_verify_code"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_green_bg_selector"
+                android:onClick="submit"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="确认修改"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_VerifyCode_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="@string/verify_code_error"
+        android:textColor="@color/green" />
+</FrameLayout>

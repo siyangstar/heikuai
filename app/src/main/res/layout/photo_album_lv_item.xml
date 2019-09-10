@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/news_item_bg_selector"
+    android:padding="10dp"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/images_icon_head" />
+
+        <ImageView
+            android:id="@+id/select_img_gridView_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="1dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/select_img_gridView_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:drawableRight="@drawable/more"
+        android:text="Camera(103)"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/text2"/>
+
+</LinearLayout>

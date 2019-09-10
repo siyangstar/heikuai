@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bg_grey">
+    
+    <RelativeLayout
+        android:id="@+id/rlTitlebar_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green" >
+
+        <ImageButton
+            android:id="@+id/btnBack_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_close_selector" />
+        
+        <Button
+            android:id="@+id/btnSend_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/send"
+            android:textSize="@dimen/text_size_large"
+            android:background="@null"
+            android:textColor="@drawable/text_white_selector" />
+        
+        <TextView 
+            android:id="@+id/tvTitle_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:text="@string/report"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/text_size_largexx" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlBottombar_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green" >
+
+        <ImageButton
+            android:id="@+id/btnPen_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pen_selector" />
+        
+        <ImageButton
+            android:id="@+id/btnClear_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/btn_clear_selector" />
+        
+        <ImageButton 
+            android:id="@+id/btnText_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+            android:background="@null"
+            android:src="@drawable/btn_text_selector"/>
+
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/ivLeftShadow_screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitlebar_screenshot"
+        android:layout_above="@id/rlBottombar_screenshot"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/shadow_left"/>
+    
+    <ImageView 
+        android:id="@+id/ivRightShadow_screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitlebar_screenshot"
+        android:layout_above="@id/rlBottombar_screenshot"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/shadow_right"/>
+    
+    <com.cqsynet.swifi.view.EditableImageView
+        android:id="@+id/ivScreenShot_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTitlebar_screenshot"
+        android:layout_above="@id/rlBottombar_screenshot"
+        android:adjustViewBounds="true"/>
+    
+    <RadioGroup  
+        android:id="@+id/rgColor_screenshot"
+        android:orientation="horizontal"    
+        android:layout_width="match_parent"     
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_above="@id/rlBottombar_screenshot"
+        android:background="#22000000"
+        android:visibility="gone">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+        <RadioButton     
+            android:id="@+id/rbRed_screenshot"    
+            android:layout_width="wrap_content"     
+            android:layout_height="wrap_content"
+            android:checked="true"  
+            android:button="@null"
+            android:background="@drawable/rb_red_selector" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+        <RadioButton     
+            android:id="@+id/rbGreen_screenshot"  
+            android:layout_width="wrap_content"     
+            android:layout_height="wrap_content" 
+            android:button="@null"  
+            android:background="@drawable/rb_green_selector" />  
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+        <RadioButton     
+            android:id="@+id/rbBlue1_screenshot"  
+            android:layout_width="wrap_content"     
+            android:layout_height="wrap_content" 
+            android:button="@null"  
+            android:background="@drawable/rb_blue1_selector" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+        
+        <RadioButton     
+            android:id="@+id/rbYellow_screenshot"  
+            android:layout_width="wrap_content"     
+            android:layout_height="wrap_content" 
+            android:button="@null"  
+            android:background="@drawable/rb_yellow_selector" /> 
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+            
+        <RadioButton     
+            android:id="@+id/rbBlue2_screenshot"  
+            android:layout_width="wrap_content"     
+            android:layout_height="wrap_content" 
+            android:button="@null"  
+            android:background="@drawable/rb_blue2_selector" /> 
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+            
+        <RadioButton     
+            android:id="@+id/rbBlack_screenshot"  
+            android:layout_width="wrap_content"     
+            android:layout_height="wrap_content" 
+            android:button="@null"  
+            android:background="@drawable/rb_black_selector" /> 
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>   
+    </RadioGroup>
+
+</RelativeLayout>

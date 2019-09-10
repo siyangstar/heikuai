@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+    
+    <TextView 
+        android:id="@+id/tvTitle_dialog_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_largex"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp">
+        
+        <TextView
+            android:id="@+id/tvContent_dialog_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        	android:textColor="@color/text2"
+        	android:textSize="@dimen/text_size_large"/>
+            
+    </ScrollView>
+    
+    <CheckBox 
+        android:id="@+id/cbRemind_dialog_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:button="@drawable/checkbox_selector"
+        android:text="不再提示"
+        android:textColor="@color/text3"
+        android:textSize="@dimen/text_size_large"/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        
+        <Button 
+            android:id="@+id/btnOk_dialog_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@drawable/btn_green_selector"
+            android:textSize="@dimen/text_size_large"
+            android:text="立即更新"
+            android:background="@null"/>
+        
+        <Button 
+            android:id="@+id/btnCancel_dialog_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnOk_dialog_update"
+            android:layout_marginRight="24dp"
+            android:textColor="@drawable/btn_green_selector"
+            android:textSize="@dimen/text_size_large"
+            android:text="@string/cancel"
+            android:background="@null"/>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

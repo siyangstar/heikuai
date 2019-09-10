@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvDate_chat_item_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="2dp"
+        android:textColor="@color/text4"
+        android:textSize="@dimen/text_size_small"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivHead_chat_item_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_profile_default_round"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tvContent_chat_item_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ivHead_chat_item_left"
+            android:background="@drawable/chat_bg_left"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/text2"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/ivFailed_chat_item_left"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/tvContent_chat_item_left"
+            android:scaleType="fitXY"
+            android:src="@drawable/chat_failed"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

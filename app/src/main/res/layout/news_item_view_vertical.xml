@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_item_bg_selector"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/tvNewsTitle_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4dp"
+        android:lineSpacingExtra="6dp"
+        android:text="这是标题"
+        android:textColor="@color/text1"
+        android:textSize="@dimen/text_size_large" />
+
+    <ImageView
+        android:id="@+id/ivNewsPhoto_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNewsTitle_vertical"
+        android:adjustViewBounds="true" />
+
+    <include
+        android:id="@+id/llNewsInfo_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivNewsPhoto_vertical"
+        android:layout_marginTop="4dp"
+        layout="@layout/news_item_news_info" />
+
+    <include
+        android:id="@+id/llActivity_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llNewsInfo_vertical"
+        android:layout_marginTop="4dp"
+        layout="@layout/news_item_view_activity"
+        android:visibility="gone" />
+
+</RelativeLayout>

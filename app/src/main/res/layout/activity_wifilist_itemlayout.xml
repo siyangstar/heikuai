@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/news_item_bg_selector" >
+
+    <ImageView
+        android:id="@+id/ivWiFiSignal_actvity_wifilist_itemlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wifi_lock_0" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvWifiName_actvity_wifilist_itemlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WiFiFree"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:id="@+id/tvSWifi_actvity_wifilist_itemlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/free_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDesc_actvity_wifilist_itemlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全（wps可用）"
+            android:textColor="@color/text4"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivJoinIcon_actvity_wifilist_itemlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/join_icon" />
+
+</LinearLayout>

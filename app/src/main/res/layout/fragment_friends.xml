@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/bg_grey">
+
+    <ListView
+        android:id="@+id/list_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你还没有好友哦"
+            android:textColor="@color/text1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快去找个好友聊天吧"
+            android:textColor="@color/text3"/>
+    </LinearLayout>
+
+    <com.cqsynet.swifi.view.SideIndexBar
+        android:id="@+id/index_bar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="40dp"
+        android:paddingRight="8dp"
+        app:letterSize="@dimen/text_size_medium"/>
+
+    <TextView
+        android:id="@+id/tvLetter_fragment_friends"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/translucence3"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="56sp"
+        android:visibility="invisible"
+        tool:visibility="visible"
+        tool:text="M"/>
+</FrameLayout>

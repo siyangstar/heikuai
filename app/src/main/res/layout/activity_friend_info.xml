@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_activity_friend_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/ivHead_activity_friend_info"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_profile_default"/>
+        <ImageView
+            android:id="@+id/ivSex_activity_friend_info"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/ivHead_activity_friend_info"
+            android:src="@drawable/man"/>
+        <TextView
+            android:id="@+id/tvName_activity_friend_info"
+            android:layout_below="@id/ivSex_activity_friend_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivHead_activity_friend_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:lines="1"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_largex"
+            android:text="昵称"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSign_activity_friend_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="@dimen/text_size_mediumx"
+        android:textColor="@color/text2"
+        android:text="此人没有写下任何签名..."/>
+
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:background="@color/line"/>
+
+    <Button
+        android:id="@+id/btnComplain_activity_friend_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white_bg_selector"
+        android:text="@string/complain"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

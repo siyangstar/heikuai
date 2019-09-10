@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/social_bg"
+    android:padding="24dp"
+    tools:context="com.cqsynet.swifi.activity.social.SocialActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvLine_fragment_find_person"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@color/orange1"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/social_line"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="同线路的人"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvStation_fragment_find_person"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cvLine_fragment_find_person"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@color/green"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/social_station"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="同站台的人"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvTrain_fragment_find_person"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/cvLine_fragment_find_person"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@color/blue2"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/social_hi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="同列车的人"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvNearby_fragment_find_person"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/cvTrain_fragment_find_person"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@color/red1"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/social_nearby"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="附近的人"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvBottle_fragment_find_person"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/cvTrain_fragment_find_person"
+            android:layout_toLeftOf="@id/cvNearby_fragment_find_person"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@color/yellow"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/social_bottle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="漂流瓶"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>

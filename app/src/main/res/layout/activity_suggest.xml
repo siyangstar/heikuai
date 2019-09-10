@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_activity_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true"
+        titlebar:showRightIcon="true"
+        titlebar:rightIcon="@drawable/btn_right_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/light_orange"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/prompt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/text_size_medium"
+            android:text="在提交反馈后的两个工作日内，我们会对您的意见和建议进行反馈，不会石沉大海的亲~" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        
+        <View  
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line"/>
+
+        <EditText
+            android:id="@+id/etContent_activity_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="top|left"
+            android:hint="描述您对本产品的意见和建议，500字以内。"
+            android:background="@color/white"
+            android:maxLength="500"
+            android:textColorHint="@color/text4"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large" />
+        
+        <View  
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp" >
+
+                <ImageView
+                    android:id="@+id/ivImg1_activity_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addimg" />
+
+                <ImageView
+                    android:id="@+id/ivImg1Del_activity_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/delimg"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    android:id="@+id/ivImg2_activity_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addimg" />
+
+                <ImageView
+                    android:id="@+id/ivImg2Del_activity_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/delimg"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    android:id="@+id/ivImg3_activity_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addimg" />
+
+                <ImageView
+                    android:id="@+id/ivImg3Del_activity_suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/delimg"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="submitSuggest"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:text="提    交"
+            android:textSize="@dimen/text_size_largex"
+            android:singleLine="true"
+            android:background="@drawable/btn_green_bg_selector"/>
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:padding="2dp"
+            android:onClick="saveAndBack"
+            android:text="返回并保存"
+            android:textSize="@dimen/text_size_largex"
+            android:textColor="@color/text2"
+            android:singleLine="true"
+            android:background="@drawable/btn_white_bg_selector"/>
+    </LinearLayout>
+
+</LinearLayout>

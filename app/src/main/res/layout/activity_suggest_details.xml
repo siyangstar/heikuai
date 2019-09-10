@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical" >
+    
+    <com.cqsynet.swifi.view.TitleBar
+        android:id="@+id/titlebar_activity_suggest_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:showLeftIcon="true" />
+    
+    <View  
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line"/>
+    
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llReply_activity_suggest_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/service_reply"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="客服回复" />
+
+        <TextView
+            android:id="@+id/tvReplyContent_activity_suggest_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large"
+            android:text="回复详情" />
+
+        <TextView
+            android:id="@+id/tvReplyData_activity_suggest_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/text4"
+            android:textSize="@dimen/text_size_medium"
+            android:text="时间" />
+
+    </LinearLayout>
+    
+    <View  
+        android:layout_height="1px"
+	    android:layout_width="match_parent"
+	    android:background="@color/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/your_suggest"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="您的反馈" />
+        
+        <TextView
+            android:id="@+id/tvSuggestContent_activity_suggest_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_size_large"
+            android:text="反馈详情" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv1_activity_suggest_details"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop" />
+            
+            <ImageView
+                android:id="@+id/iv2_activity_suggest_details"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop" />
+            
+            <ImageView
+                android:id="@+id/iv3_activity_suggest_details"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSuggestData_activity_suggest_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/text4"
+            android:textSize="@dimen/text_size_medium"
+            android:text="时间" />
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
